@@ -1,0 +1,81 @@
+USE [GD1C2025]
+GO
+
+/****** Object:  Table [gd_esquema].[Maestra]    Script Date: 21/4/2025 20:07:34 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [gd_esquema].[Maestra](
+	[Sucursal_Provincia] [nvarchar](255) NULL,
+	[Sucursal_Localidad] [nvarchar](255) NULL,
+	[Sucursal_NroSucursal] [bigint] NULL,
+	[Sucursal_Direccion] [nvarchar](255) NULL,
+	[Sucursal_telefono] [nvarchar](255) NULL,
+	[Sucursal_mail] [nvarchar](255) NULL,
+	[Cliente_Provincia] [nvarchar](255) NULL,
+	[Cliente_Localidad] [nvarchar](255) NULL,
+	[Cliente_Dni] [bigint] NULL,
+	[Cliente_Nombre] [nvarchar](255) NULL,
+	[Cliente_Apellido] [nvarchar](255) NULL,
+	[Cliente_FechaNacimiento] [datetime2](6) NULL,
+	[Cliente_Mail] [nvarchar](255) NULL,
+	[Cliente_Direccion] [nvarchar](255) NULL,
+	[Cliente_Telefono] [nvarchar](255) NULL,
+	[Pedido_Numero] [decimal](18, 0) NULL,
+	[Pedido_Fecha] [datetime2](6) NULL,
+	[Pedido_Estado] [nvarchar](255) NULL,
+	[Pedido_Total] [decimal](18, 2) NULL,
+	[Detalle_Pedido_Cantidad] [bigint] NULL,
+	[Detalle_Pedido_Precio] [decimal](18, 2) NULL,
+	[Detalle_Pedido_SubTotal] [decimal](18, 2) NULL,
+	[Sillon_Modelo_Codigo] [bigint] NULL,
+	[Sillon_Modelo] [nvarchar](255) NULL,
+	[Sillon_Modelo_Descripcion] [nvarchar](255) NULL,
+	[Sillon_Modelo_Precio] [decimal](18, 2) NULL,
+	[Sillon_Codigo] [bigint] NULL,
+	[Sillon_Medida_Alto] [decimal](18, 2) NULL,
+	[Sillon_Medida_Ancho] [decimal](18, 2) NULL,
+	[Sillon_Medida_Profundidad] [decimal](18, 2) NULL,
+	[Sillon_Medida_Precio] [decimal](18, 2) NULL,
+	[Material_Tipo] [nvarchar](255) NULL,
+	[Material_Nombre] [nvarchar](255) NULL,
+	[Material_Descripcion] [nvarchar](255) NULL,
+	[Material_Precio] [decimal](38, 2) NULL,
+	[Tela_Color] [nvarchar](255) NULL,
+	[Tela_Textura] [nvarchar](255) NULL,
+	[Madera_Color] [nvarchar](255) NULL,
+	[Madera_Dureza] [nvarchar](255) NULL,
+	[Relleno_Densidad] [decimal](38, 2) NULL,
+	[Pedido_Cancelacion_Fecha] [datetime2](6) NULL,
+	[Pedido_Cancelacion_Motivo] [varchar](255) NULL,
+	[Factura_Numero] [bigint] NULL,
+	[Factura_Fecha] [datetime2](6) NULL,
+	[Factura_Total] [decimal](38, 2) NULL,
+	[Detalle_Factura_Precio] [decimal](18, 2) NULL,
+	[Detalle_Factura_Cantidad] [decimal](18, 0) NULL,
+	[Detalle_Factura_SubTotal] [decimal](18, 2) NULL,
+	[Envio_Numero] [decimal](18, 0) NULL,
+	[Envio_Fecha_Programada] [datetime2](6) NULL,
+	[Envio_Fecha] [datetime2](6) NULL,
+	[Envio_ImporteTraslado] [decimal](18, 2) NULL,
+	[Envio_importeSubida] [decimal](18, 2) NULL,
+	[Envio_Total] [decimal](18, 2) NULL,
+	[Proveedor_Provincia] [nvarchar](255) NULL,
+	[Proveedor_Localidad] [nvarchar](255) NULL,
+	[Proveedor_RazonSocial] [nvarchar](255) NULL,
+	[Proveedor_Cuit] [nvarchar](255) NULL,
+	[Proveedor_Direccion] [nvarchar](255) NULL,
+	[Proveedor_Telefono] [nvarchar](255) NULL,
+	[Proveedor_Mail] [nvarchar](255) NULL,
+	[Compra_Numero] [decimal](18, 0) NULL,
+	[Compra_Fecha] [datetime2](6) NULL,
+	[Compra_Total] [decimal](18, 2) NULL,
+	[Detalle_Compra_Precio] [decimal](18, 2) NULL,
+	[Detalle_Compra_Cantidad] [decimal](18, 0) NULL,
+	[Detalle_Compra_SubTotal] [decimal](18, 2) NULL
+) ON [PRIMARY]
+GO
+
